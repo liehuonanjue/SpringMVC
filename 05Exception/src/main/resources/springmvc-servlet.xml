@@ -17,6 +17,21 @@ http://www.springframework.org/schema/mvc http://www.springframework.org/schema/
     <!-- if you use annotation you must configure following setting -->
     <mvc:annotation-driven/>
 
+
+    <!--设置异常处理器-->
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <!--设置异常对应的视图-->
+        <property name="exceptionMappings">
+            <props>
+                <prop key="exception.AgeException">/exception/age</prop>
+                <prop key="exception.NameException">/exception/name</prop>
+                <prop key="exception.PwdException">/exception/pwd</prop>
+            </props>
+        </property>
+        <property name="defaultErrorView" value="/exception/ort.jsp"/>
+    </bean>
+
+
     <!-- 视图解析器 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           id="internalResourceViewResolver">

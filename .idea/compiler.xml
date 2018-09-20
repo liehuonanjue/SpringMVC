@@ -8,11 +8,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="01mvc" />
         <module name="02Note" />
+        <module name="03param" />
+        <module name="05Exception" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="01mvc" target="1.7" />
       <module name="02Note" target="1.7" />
+      <module name="03param" target="1.7" />
+      <module name="05Exception" target="1.7" />
       <module name="SpringMVC" target="1.7" />
     </bytecodeTargetLevel>
   </component>

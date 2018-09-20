@@ -11,6 +11,8 @@
   <modules>
     <module>01mvc</module>
       <module>02Note</module>
+      <module>03param</module>
+      <module>05Exception</module>
   </modules>
 
   <name>SpringMVC</name>
