@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="06intercept:war">
+    <output-path>$PROJECT_DIR$/06intercept/target</output-path>
+    <root id="archive" name="06intercept.war">
+      <element id="artifact" artifact-name="06intercept:war exploded" />
+    </root>
+  </artifact>
+</component>

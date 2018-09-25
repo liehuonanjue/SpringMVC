@@ -1,10 +1,10 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="05Exception:war exploded">
-    <output-path>$PROJECT_DIR$/05Exception/target/05Excs</output-path>
+  <artifact type="exploded-war" name="06intercept:war exploded">
+    <output-path>$PROJECT_DIR$/06intercept/target/06intercept</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="05Exception" />
+          <element id="module-output" name="06intercept" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
@@ -36,9 +36,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/05Exception/target/05Excs/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/06intercept/target/06intercept/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="05Exception/web/Web" />
+      <element id="javaee-facet-resources" facet="06intercept/web/Web" />
     </root>
   </artifact>
 </component>

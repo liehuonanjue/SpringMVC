@@ -10,30 +10,26 @@ http://www.springframework.org/schema/mvc http://www.springframework.org/schema/
 
     <!-- 注解 父级路径-->
     <context:component-scan base-package="service"/>
-
-    <!-- don't handle the static resource -->
-    <mvc:default-servlet-handler/>
-
-    <!-- if you use annotation you must configure following setting -->
+    <!--识别    @InitBinder-->
     <mvc:annotation-driven/>
 
-    <bean class="service.MyException"/>
 
+    <!--    &lt;!&ndash; 让我们类型转换器 产生作用&ndash;&gt;
+        <mvc:annotation-driven conversion-service="conversionService"/>
 
-    <!--
-        &lt;!&ndash;设置异常处理器&ndash;&gt;
-        <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
-            &lt;!&ndash;设置异常对应的视图&ndash;&gt;
-            <property name="exceptionMappings">
-                <props>
-                    <prop key="exception.AgeException">/exception/age</prop>
-                    <prop key="exception.NameException">/exception/name</prop>
-                    <prop key="exception.PwdException">/exception/pwd</prop>
-                </props>
+        <bean id="myConvert" class="service.Myconvert"/>
+        &lt;!&ndash;ConversionServiceFactoryBean转换器工厂&ndash;&gt;
+        <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+            <property name="converters">
+                <set>
+                    &lt;!&ndash;注入&ndash;&gt;
+                    <ref bean="myConvert"/>
+                </set>
             </property>
-            <property name="defaultErrorView" value="/exception/ort"/>
         </bean>
-    -->
+
+
+        -->
 
 
     <!-- 视图解析器 -->

@@ -9,14 +9,18 @@
         <module name="01mvc" />
         <module name="02Note" />
         <module name="03param" />
+        <module name="04Convert" />
         <module name="05Exception" />
+        <module name="06intercept" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="01mvc" target="1.7" />
       <module name="02Note" target="1.7" />
       <module name="03param" target="1.7" />
+      <module name="04Convert" target="1.7" />
       <module name="05Exception" target="1.7" />
+      <module name="06intercept" target="1.7" />
       <module name="SpringMVC" target="1.7" />
     </bytecodeTargetLevel>
   </component>
